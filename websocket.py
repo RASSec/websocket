@@ -8,7 +8,7 @@ def test_DNS_Servers():
     global count
     lock.acquire()
     while True:
-        ws = create_connection("ws://123.207.167.163:9010/ajaxchattest")
+        ws = create_connection("ws://123.1.1.1:9010/ajaxchattest")
         ws.send("Hello, World>>1")##发送消息 eg:{'id':'1','un':'xx'}
         result = ws.recv()##接收消息
         count=count+1
